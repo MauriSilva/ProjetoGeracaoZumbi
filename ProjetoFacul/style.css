@@ -1,0 +1,456 @@
+html{
+    height: 100%;
+}
+
+@font-face {
+    font-family: Baron Neue;
+    src: url(src/BaronNeue.otf)
+
+}
+
+@font-face {
+    font-family: poppinsRegular;
+    src: url(src/poppinsRegular.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    font-family:  Baron Neue;
+    background-image: url(src/BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+
+/* #container{
+    -webkit-filter: brightness(50%);
+} */
+
+li{
+    color: #fff;
+}
+
+header{
+padding: 4vh;
+font-family: Baron Neue;
+}
+
+.headerList{
+    font-size: 1.7vw;
+    text-decoration: dotted;
+    list-style: none;
+    display: inline-block;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+}
+
+.headerList li{
+    display: inline-block;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerList a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 60px;
+    text-transform: uppercase;
+}
+
+.headerList a:hover{
+    color: green;
+    transition-duration: 0.3s;
+}
+
+.btn-login{
+    background-color: black; 
+    border: 1px solid red;
+    color: red;
+    text-align: center;
+    font-family: Baron Neue;
+    cursor: pointer;
+    margin-left: 60px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-size: 20px;
+    padding: 0px 8px 4px 8px;
+}
+
+.btn-login:hover{
+    background-color: red;
+    color: #000;
+    transition-duration: 0.3s;
+}
+
+.box-content{
+    position: absolute;
+    color: #fff;
+}
+
+.box-about{
+    width: 100vw;
+    position: absolute;
+    align-items: center;
+    color: #fff;
+}
+
+
+.sobre{
+    text-align: center;
+    padding-left: 32.5vw;
+    font-size: 2rem;
+}
+
+
+.about-text{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-top: 2vw;
+}
+
+.header-img{
+    height: 100%;
+    background: url(src/LOGIN.png) no-repeat;
+    background-size:100vw 80vh;
+    background-position: center;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+.header-img img{
+    width: 100vw;
+    overflow: hidden;
+    min-height: 80vh;
+    background-attachment: fixed;
+}
+
+.content-title{
+    width: 400px;
+    text-align: left;
+    font-size: 7vh;
+    align-self: center;
+    padding-left: 2vw;
+}
+
+.content{
+    /* margin-top: 12vh; */
+    color: #fff;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+    /* background-image: url(src/bg_recent.jfif); */
+}
+
+.img-ep-index{
+    width: 100vw;
+    height: 20vh;
+    display: block;
+    border-radius: 4px;
+}
+
+
+.img-ep-index:hover{
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.img-ep:hover{
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.img-about{
+    margin-right: 8vw;
+    height: 35vh;
+    display: block;
+}
+
+.img-about2{
+    margin-right: 8vw;
+    height: 41.6vh;
+    display: block;
+}
+
+.text-about1{
+    width: 35vw;
+    height: 25vh;
+    color: red;
+    font-size: 1rem;
+    font-family: poppinsRegular;
+}
+
+.text-about2{
+    width: 35vw;
+    color: #fff;
+    font-size: 1rem;
+    font-family: poppinsRegular;
+}
+
+.img-text{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.img-text-ep{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2vh;
+    color: red;
+}
+
+.ep-block img{
+    width: 100%;
+    
+}
+
+.ep-block{
+    padding: 4px;
+    margin: 4vw;
+    width: 20vw;
+}
+
+#footer{
+    padding: 4vh;
+    text-align: center;
+    justify-content: center;
+}
+
+#footer-about{
+    padding: 4vh 28vh 4vh 28vh;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #808080;
+    border-radius:4px ;
+}
+
+.box-contact{
+    padding-top: 20vh;
+    width: 100vw;
+    min-height: 90vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.contact-text1{
+    padding-right:10vw ;
+    width: 20vw;
+}
+
+.contact-text{
+    color: #fff;
+    width: 25vw;
+}
+
+.faleConosco{
+    text-align: center;
+    color: red;
+    padding-bottom: 5vh;
+    font-size: 1.6rem;
+}
+
+.textContact{
+    font-size: 1rem;
+    color: #fff;
+    padding-bottom: 7vh;
+    text-align: center;
+}
+
+.iconsText{
+    display: flex;
+    align-items: center;
+    padding-top: 1vh;
+    color:#fff
+}
+
+.icon{
+    padding-right: 10px ;
+}
+
+.formText{
+    color: red;
+}
+
+.formularioContato input{
+    width: 80%;
+    border: 0;
+    outline: none;
+    padding: 9px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 6px;
+    background-color: #808080;
+}
+
+.formularioContato textarea{
+    width: 80%;
+    height: 10vh;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 6px;
+    background-color: #808080;
+}
+
+.label{
+    color: red;
+    padding: 1hw;
+}
+
+.enviar{
+    max-width: 7vw;
+    height: 5vh;
+    font-size: 0.7rem;
+    cursor: pointer;
+    padding: 0;
+    color: red;
+    font-family: Baron Neue;
+}
+
+.box-login{
+    padding-top: 20vh;
+    width: 107vw;
+    min-height: 90vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.formLogin{
+    font-size: 2rem;
+    width: 42%;
+}
+
+.formLogin input{
+    width: 80%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0px 60px 0px;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 50px;
+    background-color: #808080;
+}
+
+.text-login{
+    color: red;
+    margin-top: 10px;
+}
+
+.submitButton{
+    width: 20vw;
+    font-size: 2rem;
+    background-color: red;
+    border: none;
+    color: #fff;
+    font-family: Baron Neue;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.buttonDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 100px;
+}
+
+.sejaMembro{
+    color: red;
+    text-decoration:none;
+    font-size: 1.5rem;
+}
+
+
+.box-eps{
+display:flex ;
+width: 90vw;
+align-items: center;
+justify-content:center;
+}
+
+
+.eps-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding-top: 2vw;
+}
+
+.search{
+    justify-content: end;
+    display: flex;
+}
+
+.searchbar{
+    margin-right: 100px;
+    background-color: #000;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    height: 30px;
+    width: 15vw;
+    color: #fff;
+    font-family: Baron Neue;
+    text-align: center;
+}
+
+.ep-block-eps{
+    padding: 4px;
+    margin: 4vw;
+    width: 20vw;
+}
+
+.ep-block-eps img{
+    width: 100%;
+    height: 20vh;
+    display: block;
+    border-radius: 4px;
+}
+
+.container-eps{
+    justify-content: center;
+    display: grid;
+    width: 100%;
+}
+
+#box-sucesso{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#thankyou{
+    color: #fff;
+}
